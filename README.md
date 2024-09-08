@@ -8,11 +8,19 @@
 
 ```yaml
 rule-providers:
+  fakeip-filter:
+    type: http
+    format: mrs
+    behavior: domain
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/fakeip-filter.mrs"
+    path: ./ruleset/fakeip-filter.mrs
+    interval: 86400
+
   reject:
     type: http
     format: mrs
     behavior: domain
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/reject.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/reject.mrs"
     path: ./ruleset/reject.mrs
     interval: 86400
 
@@ -20,7 +28,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: domain
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/icloud.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/icloud.mrs"
     path: ./ruleset/icloud.mrs
     interval: 86400
 
@@ -28,7 +36,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: domain
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/apple.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/apple.mrs"
     path: ./ruleset/apple.mrs
     interval: 86400
 
@@ -36,7 +44,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: domain
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/google.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/google.mrs"
     path: ./ruleset/google.mrs
     interval: 86400
 
@@ -44,7 +52,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: domain
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/proxy.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/proxy.mrs"
     path: ./ruleset/proxy.mrs
     interval: 86400
 
@@ -52,7 +60,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: domain
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/direct.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/direct.mrs"
     path: ./ruleset/direct.mrs
     interval: 86400
 
@@ -60,7 +68,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: domain
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/private.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/private.mrs"
     path: ./ruleset/private.mrs
     interval: 86400
 
@@ -68,7 +76,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: domain
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/gfw.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/gfw.mrs"
     path: ./ruleset/gfw.mrs
     interval: 86400
 
@@ -76,7 +84,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: domain
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/tld-not-cn.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/tld-not-cn.mrs"
     path: ./ruleset/tld-not-cn.mrs
     interval: 86400
 
@@ -84,7 +92,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/telegramcidr.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/telegramcidr.mrs"
     path: ./ruleset/telegramcidr.mrs
     interval: 86400
 
@@ -92,7 +100,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/cncidr.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/cncidr.mrs"
     path: ./ruleset/cncidr.mrs
     interval: 86400
 
@@ -100,7 +108,7 @@ rule-providers:
     type: http
     format: mrs
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/lancidr.mrs"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/lancidr.mrs"
     path: ./ruleset/lancidr.mrs
     interval: 86400
 
@@ -108,7 +116,7 @@ rule-providers:
     type: http
     format: text
     behavior: classical
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/applications.list"
+    url: "https://raw.gitmirror.com/DreamFerry/clash-rules/release/applications.list"
     path: ./ruleset/applications.list
     interval: 86400
 ```
